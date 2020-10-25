@@ -1,11 +1,14 @@
-const DEFAULT_PORT = 3000;
-const DEFAULT_ENV = 'dev';
+const ENVIRONMENTS = {
+    DEVELOPMENT: 'dev',
+    PRODUCTION: 'prod',
+};
 
+const DEFAULT_PORT = 3000;
+const DEFAULT_ENV = ENVIRONMENTS.DEVELOPMENT;
 
 APP_CONFIG = {
     PORT: process.env.PORT || DEFAULT_PORT,
-    ENV: DEFAULT_ENV,
-    ARGS: getArgs(),
+    ENV: getEnv() || DEFAULT_ENV,
 };
 
 function getArgs() {
@@ -23,6 +26,12 @@ function getArgs() {
 
         return acc;
     }, [])
+}
+
+function getEnv() {
+    return getArgs().find(arg =>
+        Object.keys(ENVIRONMENTS).map(key => ENVIRONMENTS[key]).includes(arg.value)
+    );
 }
 
 module.exports = {

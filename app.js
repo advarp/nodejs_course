@@ -1,4 +1,4 @@
-const http = require('http')
+const http = require('http');
 
 const { APP_CONFIG } = require('./config');
 const { logger } = require('./logger');
@@ -13,5 +13,3 @@ http.createServer((req, res) => {
     APP_CONFIG.PORT,
     () => logger.log(`Listening on port ${APP_CONFIG.PORT}...`)
 );
-
-console.log(APP_CONFIG);
