@@ -6,7 +6,7 @@ const ENVIRONMENTS = {
 const DEFAULT_PORT = 3000;
 const DEFAULT_ENV = ENVIRONMENTS.DEVELOPMENT;
 
-APP_CONFIG = {
+const APP_CONFIG = {
     PORT: process.env.PORT || DEFAULT_PORT,
     ENV: getEnv() || DEFAULT_ENV,
 };
@@ -34,6 +34,4 @@ function getEnv() {
     );
 }
 
-module.exports = {
-    APP_CONFIG,
-}
+module.exports = APP_CONFIG;

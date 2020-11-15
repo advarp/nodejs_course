@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Stand Up Meeting",
+      "location": "Odessa",
+      "date": "10.10.2020",
+      "hour": "10:30 AM"
+    },
+    {
+      "id": 2,
+      "title": "Meeting 1 to 1",
+      "location": "Kiev",
+      "date": "12.10.2020",
+      "hour": "12:00 AM"
+    },
+    {
+      "id": 3,
+      "title": "Meetup",
+      "location": "Kiev",
+      "date": "03.02.2021",
+      "hour": "14:00 AM"
+    },
+    {
+      "id": 4,
+      "title": "Meeting",
+      "location": "Kiev",
+      "date": "03.02.2021",
+      "hour": "12:00 AM"
+    },
+    {
+      "id": 5,
+      "title": "Meeting",
+      "location": "Odessa",
+      "date": "03.02.2021",
+      "hour": "12:00 AM"
+    },
+    {
+      "id": 5,
+      "title": "Meeting",
+      "location": "Lviv",
+      "date": "03.01.2021",
+      "hour": "13:00 AM"
+    },
+    {
+      "id": 6,
+      "title": "Meeting",
+      "location": "Lviv",
+      "date": "03.02.2021",
+      "hour": "12:00 AM"
+    }
+  ]
+}

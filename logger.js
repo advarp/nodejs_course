@@ -4,6 +4,4 @@ const logger = {
     error: console.error,
 }
 
-module.exports = {
-    logger,
-}
+module.exports = logger;
