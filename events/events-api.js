@@ -6,7 +6,6 @@ const csv = require('csv-parser');
 const utils = require('../helpers/utils');
 const eventsCsvPath = path.join('.', 'data', 'events.csv');
 
-eventsRouter.use('/events-batch', eventsBatchRouter);
 
 function getEvents() {
     return utils.csvToJSON(
@@ -104,6 +103,8 @@ eventsRouter.put('/:eventId', async (req, res) => {
 
     res.send(updated)
 })
+
+eventsRouter.use('/events-batch', eventsBatchRouter);
 
 eventsBatchRouter.get('/', (req, res) => {
     let stream = [];
